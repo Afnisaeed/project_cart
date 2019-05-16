@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".shop_item">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/shop_card"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+
+        android:layout_weight=".5">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="264dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/category"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.822"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/vegetables"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="232dp"
+            android:contentDescription="@string/todo"
+            android:onClick="vegetableButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vegetables" />
+
+        <ImageView
+            android:id="@+id/fruit"
+            android:layout_width="140dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:onClick="fruitButton"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.226"
+            app:layout_constraintStart_toEndOf="@+id/vegetables"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fruits" />
+
+        <ImageView
+            android:id="@+id/liquid"
+            android:layout_width="139dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="36dp"
+            android:clickable="true"
+            android:contentDescription="TODO"
+            android:onClick="liquidButton"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/liquid" />
+
+        <ImageView
+            android:id="@+id/bread"
+            android:layout_width="140dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="228dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:onClick="breadButton"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toEndOf="@+id/vegetables"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bread" />
+
+        <ImageView
+            android:id="@+id/breakfast"
+            android:layout_width="139dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:contentDescription="TODO"
+            android:onClick="breakfastButton"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vegetables"
+            app:srcCompat="@drawable/breakfast" />
+
+
+        <TextView
+            android:id="@+id/title_vegetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="232dp"
+            android:layout_marginRight="232dp"
+            android:layout_marginBottom="8dp"
+            android:text="vegetable"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vegetables"
+            app:layout_constraintVertical_bias="0.025" />
+
+        <TextView
+            android:id="@+id/title_fruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="fruit"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.634"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fruit"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/title_liquid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="340dp"
+            android:text="liquid"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/liquid" />
+
+        <TextView
+            android:id="@+id/title_bread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="bread"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.664"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bread" />
+
+        <TextView
+            android:id="@+id/title_breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="breakfast"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breakfast" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
