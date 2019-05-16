@@ -6,11 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".shop_item">
+    tools:context=".shop_item"
+    android:baselineAligned="false">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/shop_card"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="550dp"
 
         android:layout_weight=".5">
@@ -72,7 +73,8 @@
             app:layout_constraintHorizontal_bias="0.226"
             app:layout_constraintStart_toEndOf="@+id/vegetables"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/fruits" />
+            app:srcCompat="@drawable/fruits"
+            android:focusable="true" />
 
         <ImageView
             android:id="@+id/liquid"
@@ -82,12 +84,13 @@
             android:layout_marginLeft="60dp"
             android:layout_marginTop="36dp"
             android:clickable="true"
-            android:contentDescription="TODO"
+            android:contentDescription="@string/todo"
             android:onClick="liquidButton"
             android:scaleType="fitCenter"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@drawable/liquid" />
+            app:srcCompat="@drawable/liquid"
+            android:focusable="true" />
 
         <ImageView
             android:id="@+id/bread"
@@ -106,7 +109,8 @@
             app:layout_constraintHorizontal_bias="0.23"
             app:layout_constraintStart_toEndOf="@+id/vegetables"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/bread" />
+            app:srcCompat="@drawable/bread"
+            android:focusable="true" />
 
         <ImageView
             android:id="@+id/breakfast"
@@ -116,12 +120,13 @@
             android:layout_marginLeft="64dp"
             android:layout_marginTop="40dp"
             android:clickable="true"
-            android:contentDescription="TODO"
+            android:contentDescription="@string/todo"
             android:onClick="breakfastButton"
             android:scaleType="fitCenter"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/vegetables"
-            app:srcCompat="@drawable/breakfast" />
+            app:srcCompat="@drawable/breakfast"
+            android:focusable="true" />
 
 
         <TextView
@@ -131,7 +136,7 @@
             android:layout_marginEnd="232dp"
             android:layout_marginRight="232dp"
             android:layout_marginBottom="8dp"
-            android:text="vegetable"
+            android:text="@string/vegetable"
             android:textColor="@color/colorRed"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -151,7 +156,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
-            android:text="fruit"
+            android:text="@string/fruit"
             android:textColor="@color/colorRed"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -174,7 +179,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="340dp"
-            android:text="liquid"
+            android:text="@string/liquid"
             android:textColor="@color/colorRed"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -195,7 +200,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:text="bread"
+            android:text="@string/bread"
             android:textColor="@color/colorRed"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -215,7 +220,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:text="breakfast"
+            android:text="@string/breakfast"
             android:textColor="@color/colorRed"
             android:textSize="18sp"
             android:textStyle="bold"
