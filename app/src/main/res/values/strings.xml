@@ -38,4 +38,5 @@
     <string name="mcc">MCC</string>
     <string name="todo">TODO</string>
     <string name="metro">Metro</string>
+    <string name="category">choose the category</string>
 </resources>
