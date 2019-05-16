@@ -142,7 +142,7 @@ public class shop_item extends AppCompatActivity {
         intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
         // Adding the ID of button in tht intent sent to next activity
-        ImageView button = (ImageView) findViewById(R.id.vegetables);
+        ImageView button = (ImageView) findViewById(R.id.fruit);
         // String button_id = button.getResources().getResourceName(button.getId());
         String button_id = "Shop";
 
@@ -162,7 +162,7 @@ public class shop_item extends AppCompatActivity {
         intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
         // Adding the ID of button in tht intent sent to next activity
-        ImageView button = (ImageView) findViewById(R.id.vegetables);
+        ImageView button = (ImageView) findViewById(R.id.bread);
         // String button_id = button.getResources().getResourceName(button.getId());
         String button_id = "Shop";
 
@@ -182,7 +182,7 @@ public class shop_item extends AppCompatActivity {
         intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
         // Adding the ID of button in tht intent sent to next activity
-        ImageView button = (ImageView) findViewById(R.id.vegetables);
+        ImageView button = (ImageView) findViewById(R.id.breakfast);
         // String button_id = button.getResources().getResourceName(button.getId());
         String button_id = "Shop";
 
@@ -202,7 +202,7 @@ public class shop_item extends AppCompatActivity {
         intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
         // Adding the ID of button in tht intent sent to next activity
-        ImageView button = (ImageView) findViewById(R.id.vegetables);
+        ImageView button = (ImageView) findViewById(R.id.liquid);
         // String button_id = button.getResources().getResourceName(button.getId());
         String button_id = "Shop";
 

@@ -3,14 +3,17 @@ package com.example.khareedlo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.ViewUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class Select_item extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    public static final String EXTRA_MESSAGE = "com.example.khareedlo.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +27,26 @@ public class Select_item extends AppCompatActivity {
 
 
 
-        String[] itemName = {"tomato","onion","potato","ginger","lady finger","spanish","cucumber",
-                "lemon","Broccoli","pumpkin"
-        };
+        String[] itemName = {"Tomato", "potato", "cucumber", "lemon", "carrot", "spanish", "ginger",
+                "lady finger"};
 
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, itemName);
 
         ListView listView = (ListView) findViewById(R.id.practice_list);
         listView.setAdapter(itemsAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Get the selected item text from ListView
+             //   String selectedItem = (String) parent.getItemAtPosition(position);
+
+                // Display the selected item text on TextView
+                cart();
+            }
+        });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -43,5 +57,10 @@ public class Select_item extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    public void cart()
+    {
+        Intent intent = new Intent(this, Add_cart.class);
+        startActivity(intent);
+    }
 
 }
