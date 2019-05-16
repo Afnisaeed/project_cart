@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="signInBtn">#FFFFFF</color>
+
+    <color name="colorRed">#BB8000</color>
+    <color name="colorYellow">#F3F39C</color>
+    <color name="blue">#35bbbb</color>
+
 </resources>

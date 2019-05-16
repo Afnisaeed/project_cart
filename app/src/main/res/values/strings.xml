@@ -3,6 +3,8 @@
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
+    <string name="prompt_con_password">Confirm Password</string>
+    <string name="number">033...</string>
     <string name="action_sign_in">Sign In</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
@@ -15,4 +17,25 @@
     <!-- Strings related to signup -->
     <string name="action_sign_up"><u>Sign Up</u></string>
     <string name="no_account">Don\'t have an account? </string>
+    <string name="account">Do you have an account? </string>
+    <string name="title_activity_sign_up">Sign in</string>
+
+    <string name="exit_option">Fly Out</string>
+    <string name="setttings_options">Settings</string>
+    <string name="app_options">Option</string>
+    <string name="shop">Shop</string>
+    <string name="enter">Open shops </string>
+    <string name="welcome">Welcome to</string>
+    <string name="logo_desc" translatable="false">Khareedlo Logo</string>
+    <string name="title">Khareed lo!</string>
+
+
+    <string name="choice_title">Choose Shop of Your Choice</string>
+    <string name="back_button">Exit of shop</string>
+    <string name="shams">shams</string>
+    <string name="shaheen">Shaheen</string>
+    <string name="dwatson">Dwatson</string>
+    <string name="mcc">MCC</string>
+    <string name="todo">TODO</string>
+    <string name="metro">Metro</string>
 </resources>
