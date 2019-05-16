@@ -74,14 +74,7 @@ public class shop_menu extends AppCompatActivity {
 
             case R.id.action_settings:
 
-                /////////////////////////
-
-
-                ////////   ghalat da
-
-                /////////////////////////
-
-                intent = new Intent(this, LoginActivity.class);
+                intent = new Intent(this, setting.class);
                 intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
 
@@ -118,27 +111,17 @@ public class shop_menu extends AppCompatActivity {
     }
 
 
-
-
-    //TODO: Chicken Option Button Command
-
     public void mccButton(View v){
 
-        Toast.makeText(this, "Chicken Selected", Toast.LENGTH_SHORT).show();
-        Log.i("info","Proceed with Chicken Menu");
+        Toast.makeText(this, "MCC Selected", Toast.LENGTH_SHORT).show();
+        Log.i("info","Proceed with Mcc Menu");
 
-        /////////////////////////
-
-
-                ////////   ghalat da
-
-                /////////////////////////
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, shop_item.class);
         intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
         // Adding the ID of button in tht intent sent to next activity
         ImageView button = (ImageView) findViewById(R.id.mcc);
-        String button_id = "Chicken";
+        String button_id = "Shop";
 
         // Putting the Test Input by user into the Intent
         intent.putExtra(EXTRA_MESSAGE, button_id);
@@ -148,25 +131,17 @@ public class shop_menu extends AppCompatActivity {
 
     }
 
-    //TODO: Duck Option Button Command
     public void shamsButton(View v){
 
-        Toast.makeText(this, "Duck Selected", Toast.LENGTH_SHORT).show();
-        Log.i("info","Proceed with Duck  Menu");
+        Toast.makeText(this, "Shams Selected", Toast.LENGTH_SHORT).show();
+        Log.i("info","Proceed with Shams  Menu");
 
-        /////////////////////////
-
-
-        ////////   ghalat da
-
-        /////////////////////////
-
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, shop_item.class);
         intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
         // Adding the ID of button in tht intent sent to next activity
         ImageView button = (ImageView) findViewById(R.id.dwatson);
-        String button_id = "Duck";
+        String button_id = "Shop";
 
         // Putting the Test Input by user into the Intent
         intent.putExtra(EXTRA_MESSAGE, button_id);
@@ -176,25 +151,17 @@ public class shop_menu extends AppCompatActivity {
 
     }
 
-    //TODO: Quail Option Button Command
     public void shaheenButton(View v){
 
-        Toast.makeText(this, "Quail Selected", Toast.LENGTH_SHORT).show();
-        Log.i("info","Proceed with Quail Menu");
+        Toast.makeText(this, "Shaheen Selected", Toast.LENGTH_SHORT).show();
+        Log.i("info","Proceed with Shaheen Menu");
 
-        /////////////////////////
-
-
-        ////////   ghalat da
-
-        /////////////////////////
-
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, shop_item.class);
         intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
         // Adding the ID of button in tht intent sent to next activity
         ImageView button = (ImageView) findViewById(R.id.shaheen);
-        String button_id = "Quail";
+        String button_id = "Shop";
 
         // Putting the Test Input by user into the Intent
         intent.putExtra(EXTRA_MESSAGE, button_id);
@@ -205,27 +172,18 @@ public class shop_menu extends AppCompatActivity {
     }
 
 
-
-    //TODO: Partridge Option Button Command
     public void dwatsonButton(View v){
 
-        Toast.makeText(this, "Partridge Selected", Toast.LENGTH_SHORT).show();
-        Log.i("info","Proceed with Partridge Menu");
+        Toast.makeText(this, "Dwatson Selected", Toast.LENGTH_SHORT).show();
+        Log.i("info","Proceed with Dwatson Menu");
 
-        /////////////////////////
-
-
-        ////////   ghalat da
-
-        /////////////////////////
-
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, shop_item.class);
         intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
         // Adding the ID of button in tht intent sent to next activity
         ImageView button = (ImageView) findViewById(R.id.metro);
         //String button_id = button.getResources().getResourceName(button.getId());
-        String button_id = "Partridge";
+        String button_id = "Shop";
 
 
         // Putting the Test Input by user into the Intent
@@ -236,26 +194,18 @@ public class shop_menu extends AppCompatActivity {
 
     }
 
-    //TODO: Quail Option Button Command
     public void metroButton(View v){
 
-        Toast.makeText(this, "Pigeon Selected", Toast.LENGTH_SHORT).show();
-        Log.i("info","Proceed with Pigeon Menu");
+        Toast.makeText(this, "Metro Selected", Toast.LENGTH_SHORT).show();
+        Log.i("info","Proceed with Metro Menu");
 
-        /////////////////////////
-
-
-        ////////   ghalat da
-
-        /////////////////////////
-
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, shop_item.class);
         intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
         // Adding the ID of button in tht intent sent to next activity
         ImageView button = (ImageView) findViewById(R.id.shams);
         // String button_id = button.getResources().getResourceName(button.getId());
-        String button_id = "Pigeon";
+        String button_id = "Shop";
 
         // Putting the Test Input by user into the Intent
         intent.putExtra(EXTRA_MESSAGE, button_id);
@@ -264,9 +214,5 @@ public class shop_menu extends AppCompatActivity {
         startActivity(intent);
 
     }
-
-
-
-
 
 }

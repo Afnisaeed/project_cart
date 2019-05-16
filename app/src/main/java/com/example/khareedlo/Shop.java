@@ -222,14 +222,6 @@ public class Shop extends AppCompatActivity implements SensorEventListener {
 
         // Creating Intent
 
-
-
-////////////////////////////////////////////
-//////////////////////dala ghalat day////
-////////////////////////////////////////////
-
-
-
         Intent intent = new Intent(this, shop_menu.class);
         intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
@@ -257,15 +249,7 @@ public class Shop extends AppCompatActivity implements SensorEventListener {
 
             case R.id.action_shop:
 
-
-
-
-//////////////////////dala ghalat day////
-
-
-
-
-                intent = new Intent(this, LoginActivity.class);
+                intent = new Intent(this, shop_menu.class);
                 intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
                 String button_id = "Duck Menu";
@@ -280,14 +264,7 @@ public class Shop extends AppCompatActivity implements SensorEventListener {
 
             case R.id.action_settings:
 
-////////////////////////////////////////////
-//
-////////////////////////dala ghalat day////
-//
-//
-//
-//
-                intent = new Intent(this, LoginActivity.class);
+                intent = new Intent(this, setting.class);
                 intent.addFlags(intent.FLAG_ACTIVITY_NEW_TASK);
 
 
